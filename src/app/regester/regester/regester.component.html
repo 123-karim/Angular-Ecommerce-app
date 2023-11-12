@@ -1,0 +1,93 @@
+<!-- Section: Design Block -->
+
+
+<section class="text-center">
+  <div
+    class="card mx-4 mx-md-5 shadow-5-strong"
+    style="
+      margin-top: 20px;
+      background: hsla(0, 0%, 100%, 0.8);
+      backdrop-filter: blur(30px);
+    "
+  >
+    <div class="card-body py-5 px-md-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="fw-bold mb-5">Sign up now</h2>
+          <form [formGroup]="form"(submit)="submit()">
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class="form-outline">
+                  <input
+                    formControlName="firstName"
+                    type="text"
+                    id="1"
+                    class="form-control"
+                  />
+                  <label class="form-label" for="1"
+                    >First name</label
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="form-outline">
+                  <input
+                    formControlName="lastName"
+                    type="text"
+                    id="2"
+                    class="form-control"
+                  />
+                  <label class="form-label" for="2"
+                    >Last name</label
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- user name -->
+            <div class="form-outline mb-4">
+              <input
+                formControlName="userName"
+                type="text"
+                id="3"
+                class="form-control"
+              />
+              <label class="form-label" for="3">User Name</label>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input
+                formControlName="email"
+                type="email"
+                id="4"
+                class="form-control"
+              />
+              <label class="form-label" for="4"
+                >Email address</label
+              >
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input
+                formControlName="password"
+                type="password"
+                id="5"
+                class="form-control"name="password" autocomplete="on"
+              />
+              <label class="form-label" for="5">Password</label>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">
+              Sign up
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Section: Design Block -->
